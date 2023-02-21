@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    font-family: sans-serif;
+
+}
+
+/* navbar  */
+navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    width: 100%;
+    /* border: 2px solid black; */
+    position: relative;
+}
+
+/* .left-navbar */
+
+.left-navbar span {
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    position: absolute;
+    left: 80px;
+    top: 20px;
+    cursor: pointer;
+}
+
+/* .right-navbar */
+
+.right-navbar {
+    display: flex;
+    gap: 60px;
+    position: absolute;
+    right: 80px;
+    top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.right-navbar span:hover{
+    color: rgb(28, 176, 221);
+}
+
+
+.active{
+    color: rgb(28, 176, 221);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* navbar animation start */
+.left-navbar span{
+    animation-delay: 0.5s;
+}
+.right-navbar span:nth-child(1){
+    animation-delay: 0.6s;
+}
+.right-navbar span:nth-child(2){
+    animation-delay: 0.7s;
+}
+.right-navbar span:nth-child(3){
+    animation-delay: 0.8s;
+}
+.right-navbar span:nth-child(4){
+    animation-delay: 0.9s;
+}
+.right-navbar span:nth-child(5){
+    animation-delay: 1s;
+}
+
+
+
+
+navbar span{
+    animation: down  0.7s  ease forwards;
+    opacity: 0;
+}
+@keyframes down{
+    0%{
+        transform: translateY(-100px);
+        opacity:0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* <!-- navbar  end --> */
+
+
+/* <!-- content  start--> */
+content{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+/* left-content  start*/
+
+.left-content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid black; */
+    flex-direction: column;
+    gap: 20px;
+    top: -40px;
+    left: 80px;
+    position: absolute;
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    cursor: pointer;
+    transform-style: preserve-3d;
+}
+.left-content button{
+    animation: down  0.7s  ease forwards;
+    opacity: 0;
+    padding: 20px 30px;
+    color: white;
+    background-image: linear-gradient(to right top, #370533, #463066, #475a98, #3786c6, #12b4eb);    outline: none;
+    border: none;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    cursor: pointer;
+    transform: translateZ(200px);
+}
+.left-content button:hover{
+    color:  #12b4eb;
+    background: white;
+    font-weight: 700;
+    border: 1px solid rgb(221, 28, 205);
+}
+
+/* type animation  start*/
+
+.left-content span:nth-child(3):after{
+   content: '';
+    color: #12b4eb;
+    animation: type 10s infinite;
+    cursor: pointer;
+}
+
+@keyframes type{
+    0%{
+        content: "Web-Developer";
+       
+    }
+    10%{
+        content: "React.js";
+       
+    }
+    20%{
+        content: "Node.js";
+       
+    }
+    30%{
+        content: "MongoDB";
+       
+    }
+    40%{
+        content: "Express.js";
+       
+    }
+    50%{
+        content: "Git";
+       
+    }
+    70%{
+        content: "MERN";
+       
+    }
+    80%{
+        content: "Java-Script";
+       
+    }
+    90%{
+        content: "Coder";
+       
+    }
+}
+
+/* right-content start */
+
+.right-content{
+    position: absolute;
+    right: 150px;
+    top: 120px;
+    transform-style: preserve-3d;
+}
+.right-content img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: rgb(221, 28, 205) 0px 54px 55px, rgb(28, 176, 221) 0px -12px 30px, rgb(28, 176, 221) 0px 4px 6px, rgb(28, 176, 221) 0px 12px 13px, rgb(28, 176, 221) 0px -3px 5px;
+    transform: translateZ(200px);
+}
+
+/* right animation slide start */
+
+.left-content span:nth-child(1){
+    animation-delay: 0.6s;
+    transform: translateZ(160px);
+}
+.left-content span:nth-child(2){
+    animation-delay: 0.7s;
+    transform: translateZ(170px);
+}
+.left-content span:nth-child(3){
+    animation-delay: 0.8s;
+    transform: translateZ(180px);
+}
+.left-content span:nth-child(4){
+    animation-delay: 0.9s;
+    transform: translateZ(190px);
+}
+.left-content button{
+    animation-delay: 1s;
+}
+/* .right-navbar span:nth-child(5){
+    animation-delay: 1s;
+} */
+
+content span{
+    
+    animation: down  0.7s  ease forwards;
+    opacity: 0;
+}
+@keyframes down{
+    0%{
+        transform: translateX(-100px);
+        opacity:0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* end */
+

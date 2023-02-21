@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Portfolio </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- navbar  start-->
+
+  <navbar>
+    <div class="left-navbar">
+        <span>   Portfolio.</span>
+    </div>
+    <div class="right-navbar">
+        <span class="active">Home</span>
+        <span>About</span>
+        <span>Skills</span>
+        <span> Portfolio</span>
+        <span>Contact.</span>
+    </div>
+  </navbar>
+
+  <!-- navbar  end -->
+
+<!-- content  start-->
+
+  <content>
+
+   <div class="left-content">
+    <span>Hello,It's Me</span>
+    <span>Kishan Kharb</span>
+    <span>And I'm a </span>
+    
+    <span>Web development is the work involved in developing <br/>
+         website for the Internet or an intranet.</span>
+    
+    <button>Download CV</button>
+   </div>
+
+   <div class="right-content">
+    <img src="./images.jpg"/>
+   </div>
+
+  </content>
+
+
+<!-- content  end -->
+
+
+
+  
+  <script src="script.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js" 
+integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw==" 
+crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</script>
+
+<script>
+    VanillaTilt.init(document.querySelector(".right-content"), {
+		max: 15,
+		speed: 800,
+        glare :true,
+	});
+</script>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
